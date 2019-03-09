@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic',
+        sans-serif;
+    color: rgb(239, 242, 245);
+}
+
+section {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first-section {
+    background-image: linear-gradient(rgba(78, 78, 78, 0.329), rgba(255, 255, 255, 0)), url(images/car.jpg);
+}
+
+.second-section {
+    background-image: linear-gradient(rgba(78, 78, 78, 0.329), rgba(255, 255, 255, 0)), url(images/cuba.jpg);
+    background-position: 25%;
+}
+
+h2,
+p {
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.buttons {
+    margin: 5% auto;
+
+}
+
+button {
+    padding: 15px 45px;
+    margin: 0 20px;
+    border-radius: 20px;
+    background: none;
+    border: white solid 2px;
+    min-width: 200px;
+}
