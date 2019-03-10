@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700');
 
-* {
+* ,
+::before,
+::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +11,7 @@
     color: rgb(239, 242, 245);
 }
 
-section {
+/* section {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,15 +19,27 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
-.first-section {
+/* .first-section {
     background-image: linear-gradient(rgba(78, 78, 78, 0.329), rgba(255, 255, 255, 0)), url(images/car.jpg);
 }
 
 .second-section {
     background-image: linear-gradient(rgba(78, 78, 78, 0.329), rgba(255, 255, 255, 0)), url(images/cuba.jpg);
     background-position: 25%;
+} */
+
+body {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    line-height: 1.5;
+    font-size: 62.5%;
+    background-color: #aaaaaa;
 }
 
 h2,
@@ -50,4 +64,96 @@ button {
     background: none;
     border: white solid 2px;
     min-width: 200px;
+}
+
+.smooth {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(1vh);
+    scroll-snap-type: y mandatory;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    min-height: 60px;
+    font-size: 1rem;
+    background-image: linear-gradient(180deg, #1d1e22, rgba(29, 30, 34, 0.1), transparent);
+    mix-blend-mode: luminosity;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    align-items: start;
+    
+
+}
+
+.header ul li {
+    margin: 0 1em;
+    padding: 1em;
+}
+
+.header ul li a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #f4f4ff;
+}
+
+.header ul li a::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 3px;
+    transition: all 0.1s linear;
+}
+
+.header ul li a:hover:after {
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+    background-image: url(images/car.jpg);
+    background-size: cover;
+    scroll-snap-align: center;
+    background-position: center;
+}
+
+/* section h2 {
+    text-transform: uppercase;
+    background-color: #f4f4f4;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    user-select: none;
+} */
+
+section:nth-child(3) {
+    background-image: url(images/cuba.jpg);
 }
