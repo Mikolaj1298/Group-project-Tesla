@@ -1,0 +1,40 @@
+.container  {
+    min-height: 100%;
+    position: relative'
+}
+
+.footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+ul.footerlist li {
+    font-size: 14px;
+    line-height: 1.25;
+    color: black;
+    list-style-type: none;
+    cursor: pointer;
+    display: inline-flex;
+    margin-right: 15px;
+}
+
+a.footeritem:link {
+    text-decoration: none;
+    color: black;
+}
+
+a.footeritem:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a.footeritem:visited {
+    text-decoration: none;
+    color: black;
+}
