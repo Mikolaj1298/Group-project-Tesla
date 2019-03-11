@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<<<<<<< HEAD
     <title>Tesla Project</title>
-=======
-    <title>Tesla</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
->>>>>>> 1bcc7a58ab995ac5f96c883b3509258887df1e77
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="jquery.fullpage.js"></script>
   </head>
   <body>
     <header></header>
 
-    <div class="smooth">
+    <div id="fullpage" class="smooth">
         <div class="header">
           <ul>
             <li><a href="#first_section">first_section</a></li>
@@ -41,7 +40,10 @@
           <p>Solar and Powerwall</p>
         </section>
     </div>
-    
+    <script>
+      FastClick.attach(document.body);
+      $('#fullpage').fullpage();
+    </script>
 
     <footer></footer>
   </body>
