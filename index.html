@@ -1,101 +1,123 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Active Slide - fullPage.js</title>
     <meta name="author" content="Matthew Howell" />
     <meta name="description" content="fullPage continuous scrolling demo." />
-    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta
+      name="keywords"
+      content="fullpage,jquery,demo,scroll,loop,continuous"
+    />
     <meta name="Resource-type" content="Document" />
-
 
     <link rel="stylesheet" type="text/css" href="mechanics/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="mechanics/swiper.min.css">
+    <link rel="stylesheet" href="mechanics/swiper.min.css" />
 
     <!--[if IE]>
-        <script type="text/javascript">
-             var console = { log: function() {} };
-        </script>
+      <script type="text/javascript">
+        var console = { log: function() {} };
+      </script>
     <![endif]-->
-</head>
+  </head>
 
-<body>
+  <body>
     <ul id="menu">
-        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-        <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+      <li data-menuanchor="firstPage" class="active">
+        <a href="#firstPage">First slide</a>
+      </li>
+      <li data-menuanchor="secondPage">
+        <a href="#secondPage">Second slide</a>
+      </li>
+      <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
     </ul>
 
     <div id="fullpage">
-        <div class="section " id="section0">
-            <div class="swiper-container">
-                <div class="parallax-bg" style="background-image:url(imgs/main_swipe.jpg)" data-swiper-parallax="-23%"></div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <h1>XD</h1>
-                    </div>
-                    <div class="swiper-slide">
-                        <h1>XD2</h1>
-                    </div>
-                </div>
+      <div class="section " id="section0">
+        <div class="swiper-container">
+          <div
+            class="parallax-bg"
+            style="background-image:url(imgs/main_swipe.jpg)"
+            data-swiper-parallax="-23%"
+          ></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h1 class="order">XD</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="btns first">
+                <button>Order now</button>
+                <button>Learn more</button>
+              </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination swiper-pagination-white"></div>
-            <!-- Add Navigation -->
-            <!-- <div class="swiper-button-prev swiper-button-white"></div> -->
-            <!-- <div class="swiper-button-next swiper-button-white"></div> -->
+            <div class="swiper-slide">
+              <h1 class="order">XD2</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="btns first">
+                <button>Order now</button>
+                <button>Learn more</button>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        
-        
-        <div class="section" id="section1">
-            <div class="intro">
-                <video id="myVideo" loop muted data-autoplay>
-                    <source src="imgs/flowers.mp4" type="video/mp4">
-                        <source src="imgs/flowers.webm" type="video/webm">
-                        </video>
-                        <div class="layer">
-                            <h1>fullPage.js videos</h1>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                
-            <div class="section" id="section2">
-                <h1>Section 1</h1>
-            </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Navigation -->
+        <!-- <div class="swiper-button-prev swiper-button-white"></div> -->
+        <!-- <div class="swiper-button-next swiper-button-white"></div> -->
+      </div>
+
+      <div class="section" id="section1">
+        <div class="intro">
+          <video id="myVideo" loop muted data-autoplay>
+            <source src="imgs/flowers.mp4" type="video/mp4" />
+            <source src="imgs/flowers.webm" type="video/webm" />
+          </video>
+          <div class="layer">
+            <h1 class="discover">Discover our site</h1>
+          </div>
+          <div class="btns">
+            <button>Visit a store</button>
+            <button>Used inventory</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section2">
+        <h1 class="power">Power Everything</h1>
+        <p>Solar and Powerwall</p>
+        <div class="btns">
+          <button>Contact us</button>
+          <button>Learn more</button>
+        </div>
+      </div>
     </div>
 
     <script src="mechanics/swiper.min.js"></script>
     <script type="text/javascript" src="mechanics/fullpage.js"></script>
     <script type="text/javascript" src="examples.js"></script>
     <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#1bbc9b',  , '#7BAABE', 'whitesmoke', '#ccddff'],
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-            menu: '#menu',
-            lazyLoad: true,
-        });
+      var myFullpage = new fullpage("#fullpage", {
+        sectionsColor: ["#1bbc9b", , "#7BAABE", "whitesmoke", "#ccddff"],
+        anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
+        menu: "#menu",
+        lazyLoad: true
+      });
     </script>
 
-<script>
-    var swiper = new Swiper('.swiper-container', {
+    <script>
+      var swiper = new Swiper(".swiper-container", {
         speed: 500,
         parallax: true,
         pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
+          el: ".swiper-pagination",
+          clickable: true
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-</script>
-</body>
-
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    </script>
+  </body>
 </html>

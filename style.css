@@ -1,17 +1,21 @@
-
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
     font-size: 100%;
-    margin:0;
-    padding:0;
-    color:#444;
+    margin: 0;
+    padding: 0;
+    color: #444;
 }
 
 body {
     font-family: arial, helvetica;
     color: #333;
     color: rgba(0, 0, 0, 0.5);
-   
+
 }
 
 h1 {
@@ -24,7 +28,7 @@ p {
 
 .section {
     text-align: center;
-    	overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -84,10 +88,10 @@ p {
     /* height: 40px; */
     z-index: 11;
     /* width: 100%; */
-    
+
 }
 
-	/* #section1 {
+/* #section1 {
 	    background-image: url(http://lorempixel.com/900/600/nightlife/2/);
 	    padding: 6% 0 0 0;
     } */
@@ -102,47 +106,98 @@ p {
     background-size: cover;
     background-position: center;
 }
- 
-   .swiper-container {
-       width: 100%;
-       height: 100%;
-       background: #000;
-   }
-    .swiper-slide {
-        font-size: 18px;
-        color: #fff;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 40px 60px;
-    }
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
 
 #section2 {
     width: 100;
     background-size: cover;
     background-image: url(imgs/bg3.jpg);
 }
-	#myVideo {
-	    position: absolute;
-	    right: 0;
-	    bottom: 0;
-	    top: 0;
-	    right: 0;
-	    width: 100%;
-	    height: 100%;
-	    background-size: 100% 100%;
-	    background-color: black;
-	    /* in case the video doesn't fit the whole page*/
-	    background-image:
-	        /* our video */
-	    ;
-	    background-position: center center;
-	    background-size: contain;
-	    object-fit: cover;
-	    /*cover video background */
-	    z-index: 10;
-    }
+
+.discover,
+.power {
+    color: rgb(243, 243, 243);
+}
+
+p {
+    color: rgb(65, 65, 65);
+}
+
+.btns {
+    margin-top: 50px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80wv;
+}
+
+.first>button {
+    margin-top: 30px;
+}
+
+.order {
+    color: rgb(233, 233, 233);
+}
+
+.order+p {
+    color: rgb(194, 194, 194);
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: rgba(49, 49, 49, 0.39);
+    color: rgb(243, 243, 243);
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:first-child {
+    color: black;
+    background-color: #fff;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+    /* in case the video doesn't fit the whole page*/
+    background-image:
+        /* our video */
+    ;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    /*cover video background */
+    z-index: -1;
+}
+
+
 /* /*     
     	video::-webkit-media-controls {
     	    display: none !important;
     	} */
- */
+*/
