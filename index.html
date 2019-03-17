@@ -9,7 +9,7 @@
     <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
     <meta name="Resource-type" content="Document" />
 
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="mechanics/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="mechanics/swiper.min.css">
@@ -23,7 +23,7 @@
 
 <body>
     <ul id="menu">
-        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a><a href=""></a></li>
         <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
         <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
     </ul>
@@ -31,13 +31,31 @@
     <div id="fullpage">
         <div class="section " id="section0">
             <div class="swiper-container">
-                <div class="parallax-bg" style="background-image:url(imgs/main_swipe.jpg)" data-swiper-parallax="-23%"></div>
+                <div class="parallax-bg" style="background-image:url(imgs/tesla_template.jpg)" data-swiper-parallax="-50%"></div>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <h1>XD</h1>
+                        <h2>Model S</h2>
+                        <div class="buttons">
+                            <a href="https://www.tesla.com/models/design#battery" class="button">Visit a store</a>
+                            <a href="https://www.google.com/maps/place/Tesla+Supercharger/@50.2545813,19.044415,17z/data=!3m1!4b1!4m5!3m4!1s0x4716cfc8239d61cf:0x102e7dbf3baf0ec5!8m2!3d50.2545813!4d19.0466037"
+                            class="button">Used inventor</a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <h1>XD2</h1>
+                        <h2>Model 3</h2>
+                        <div class="buttons">
+                            <a href="https://www.tesla.com/model3/design#battery" class="button">Visit a store</a>
+                            <a href="https://www.google.com/maps/place/Tesla+Supercharger/@50.2545813,19.044415,17z/data=!3m1!4b1!4m5!3m4!1s0x4716cfc8239d61cf:0x102e7dbf3baf0ec5!8m2!3d50.2545813!4d19.0466037"
+                            class="button">Used inventor</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>Model Xd</h2>
+                        <div class="buttons">
+                            <a href="https://www.tesla.com/modelx/design#battery" class="button">Visit a store</a>
+                            <a href="https://www.google.com/maps/place/Tesla+Supercharger/@50.2545813,19.044415,17z/data=!3m1!4b1!4m5!3m4!1s0x4716cfc8239d61cf:0x102e7dbf3baf0ec5!8m2!3d50.2545813!4d19.0466037"
+                            class="button">Used inventor</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,23 +69,39 @@
         
         
         <div class="section" id="section1">
+            <div class="over-video">
+                <h2>Explore the world everyday</h2>
+            </div>
             <div class="intro">
                 <video id="myVideo" loop muted data-autoplay>
-                    <source src="imgs/flowers.mp4" type="video/mp4">
-                        <source src="imgs/flowers.webm" type="video/webm">
-                        </video>
-                        <div class="layer">
-                            <h1>fullPage.js videos</h1>
-                        </div>
-                    </div>
+                    <source src="imgs/night_sky2.mp4" type="video/mp4">
+                    <!-- <source src="imgs/flowers.webm" type="video/webm"> -->
+                </video>
+                <div class="layer">
+                    <h1>fullPage.js videos</h1>
                 </div>
-                
-                
-                
-                
-            <div class="section" id="section2">
-                <h1>Section 1</h1>
             </div>
+        </div>
+        
+        
+        
+        
+        <div class="section" id="section2">
+            <div class="over-video" class="version2">
+                <h2>Feel the social responsibility</h2>
+            </div>
+
+            <div class="intro">
+                <video id="myVideo" loop muted data-autoplay>
+                    <source src="imgs/windmill.mp4" type="video/mp4">
+                    <!-- <source src="imgs/flowers.webm" type="video/webm"> -->
+                </video>
+                <div class="layer">
+                    <h1>fullPage.js videos</h1>
+                </div>
+            </div>
+        
+        </div>
     </div>
 
     <script src="mechanics/swiper.min.js"></script>
