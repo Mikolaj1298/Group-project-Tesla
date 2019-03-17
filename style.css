@@ -1,17 +1,19 @@
 
 h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Mono',
+    monospace;
     font-weight: normal;
-    font-size: 100%;
+    font-size: 60px;
     margin:0;
     padding:0;
-    color:#444;
+    color:rgba(253, 253, 253, 0.74);
+    text-shadow:0 2px 18px rgba(0, 0, 0, 0.8);
 }
 
 body {
     font-family: arial, helvetica;
     color: #333;
     color: rgba(0, 0, 0, 0.5);
-   
 }
 
 h1 {
@@ -24,9 +26,26 @@ p {
 
 .section {
     text-align: center;
-    	overflow: hidden;
+    overflow: hidden;
 }
 
+
+#menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+    position: fixed;
+    height: 100%;
+    /* top: 0; */
+    /* left: 0; */
+    /* height: 40px; */
+    z-index: 11;
+    /* width: 100%; */
+}
 
 #menu li {
     display: flex;
@@ -35,14 +54,14 @@ p {
     margin: 10px;
     color: #000;
     background: #fff;
-    background: rgba(18, 148, 25, 0.5);
+    background: rgba(119, 119, 119, 0.5);
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
 
 #menu li.active {
     background: #666;
-    background: rgba(12, 202, 97, 0.322);
+    background: rgba(255, 255, 255, 0.322);
     color: #fff;
 }
 
@@ -69,23 +88,6 @@ p {
     color: #fff;
 }
 
-#menu {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    position: fixed;
-    height: 100%;
-    /* top: 0; */
-    /* left: 0; */
-    /* height: 40px; */
-    z-index: 11;
-    /* width: 100%; */
-    
-}
 
 	/* #section1 {
 	    background-image: url(http://lorempixel.com/900/600/nightlife/2/);
@@ -96,11 +98,11 @@ p {
     position: absolute;
     left: 0;
     top: 0;
-    width: 130%;
+    width: 200%;
     height: 100%;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: center;
+    background-position: 0vh 55%;
 }
  
    .swiper-container {
@@ -109,18 +111,22 @@ p {
        background: #000;
    }
     .swiper-slide {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; */
         font-size: 18px;
         color: #fff;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        padding: 40px 60px;
+        padding-top: 18vh;
     }
 
-#section2 {
+/* #section2 {
     width: 100;
     background-size: cover;
     background-image: url(imgs/bg3.jpg);
-}
+} */
 	#myVideo {
 	    position: absolute;
 	    right: 0;
@@ -139,10 +145,47 @@ p {
 	    background-size: contain;
 	    object-fit: cover;
 	    /*cover video background */
-	    z-index: 10;
+	    z-index: 0;
     }
-/* /*     
-    	video::-webkit-media-controls {
-    	    display: none !important;
-    	} */
- */
+
+ .buttons {
+     margin: 4% auto;
+ }
+
+ .button {
+     text-decoration: none;
+     
+     padding: 15px 45px;
+     margin: 0 10px;
+     border-radius: 20px;
+     background: rgba(54, 54, 54, 0.233);
+     color: black;
+     border: white solid 2px;
+     min-width: 200px;
+     font-weight: 700;
+     font-size: 1rem;
+ }
+
+a:visited {
+        text-decoration: none;
+        decoration: none;
+}
+
+ .button:first-child {
+     background: white;
+     color: black;
+ }
+
+ .over-video {
+    position: relative;
+     z-index: 1;
+ }
+
+ .fp-tableCell {
+     text-align: center;
+     vertical-align: end;
+     /* padding-bottom: 20vh;  */
+ }
+
+ 
+
