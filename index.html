@@ -1,122 +1,101 @@
 <!DOCTYPE html>
-<html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tesla Project</title>
-    <link href="style.css" type="text/css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js"></script>
-    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="main_section_styles/jquery.fullpage.js"></script>
-    <link rel="stylesheet" href="main_section_styles/swiper.min.css">
-    
-  </head>
-  <body>
-    <header></header>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <div id="fullpage" class="smooth">
-      <div class="header">
-        <ul>
-          <li><a href="#first_section">first_section</a></li>
-          <li><a href="#second_section">second_section</a></li>
-          <li><a href="#third_section">third_section</a></li>
-          <li><a href="#fourth_section">third_section</a></li>
-        </ul>
-      </div>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Active Slide - fullPage.js</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
 
-      <section id="first_section" class="first-section">
-        <h2>Discover</h2>
-        <div class="buttons">
-          <button>Visit a store</button>
-          <button>Used inventory</button>
+
+    <link rel="stylesheet" type="text/css" href="mechanics/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="mechanics/swiper.min.css">
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <ul id="menu">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+    </ul>
+
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <div class="swiper-container">
+                <div class="parallax-bg" style="background-image:url(imgs/main_swipe.jpg)" data-swiper-parallax="-23%"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h1>XD</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>XD2</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Navigation -->
+            <!-- <div class="swiper-button-prev swiper-button-white"></div> -->
+            <!-- <div class="swiper-button-next swiper-button-white"></div> -->
         </div>
-      </section>
-
-      <section id="second_section" class="second-section">
-        <h2>Power Everything</h2>
-        <p>Solar and Powerwall</p>
-        <div class="buttons">
-          <button>Request a Quote</button>
-          <button>Learn more</button>
-        </div>
-      </section>
-
-      <section id="third_section" class="third-section">
-        <div class="swiper-container">
-          <div class="parallax-bg" style="background-image:url(images/cuba.jpg)" data-swiper-parallax="-23%"></div>
-
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="title" data-swiper-parallax="-300">Slide 1</div>
-              <div class="subtitle" data-swiper-parallax="-300">Subtitle</div>
-              <div class="text" data-swiper-parallax="-300">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
-                  felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
-                  magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                  ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
-                  quis feugiat.</p>
-              </div>
+        
+        
+        
+        <div class="section" id="section1">
+            <div class="intro">
+                <video id="myVideo" loop muted data-autoplay>
+                    <source src="imgs/flowers.mp4" type="video/mp4">
+                        <source src="imgs/flowers.webm" type="video/webm">
+                        </video>
+                        <div class="layer">
+                            <h1>fullPage.js videos</h1>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            <div class="section" id="section2">
+                <h1>Section 1</h1>
             </div>
-            <div class="swiper-slide">
-              <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Slide 2</div>
-              <div class="subtitle" data-swiper-parallax="-300">Subtitle</div>
-              <div class="text" data-swiper-parallax="-300">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
-                  felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
-                  magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                  ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
-                  quis feugiat.</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="title" data-swiper-parallax="-300">Slide 3</div>
-              <div class="subtitle" data-swiper-parallax="-300">Subtitle</div>
-              <div class="text" data-swiper-parallax="-300">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
-                  felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
-                  magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                  ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
-                  quis feugiat.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination swiper-pagination-white"></div>
-          <!-- Add Navigation -->
-          <div class="swiper-button-prev swiper-button-white"></div>
-          <div class="swiper-button-next swiper-button-white"></div>
-
-
-
-      </section>
-      <section id="fourth_section" class="fourth-section">
-        <h2>Power Everything</h2>
-        <p>Solar and Powerwall</p>
-      </section>
     </div>
-    <script>
-      FastClick.attach(document.body);
-      $("#fullpage").fullpage();
+
+    <script src="mechanics/swiper.min.js"></script>
+    <script type="text/javascript" src="mechanics/fullpage.js"></script>
+    <script type="text/javascript" src="examples.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#1bbc9b',  , '#7BAABE', 'whitesmoke', '#ccddff'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            menu: '#menu',
+            lazyLoad: true,
+        });
     </script>
 
-    <script src="main_section_styles/swiper.min.js"></script>
-
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        speed: 600,
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        speed: 500,
         parallax: true,
         pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
+            el: '.swiper-pagination',
+            clickable: true,
         },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-      });
-    </script>
+    });
+</script>
+</body>
 
-    <footer></footer>
-  </body>
 </html>
