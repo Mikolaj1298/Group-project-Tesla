@@ -9,7 +9,7 @@
     <link href="fontello icons/fontello-e5c3186a/css/fontello.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header>
+    <header id = "wholeheader">
       <div class="header-main-container">
         <div class="header-actual-container">
           <h1 class="header-logo-container">
@@ -17,21 +17,14 @@
               tesla
             </a>
           </h1>
-          <input id="header-trigger" class="header-checkbox">
-          <label for="header-trigger">
+          <input type="checkbox" id="header-trigger" class="header-checkbox">
+          <label id="sidelabel" for="header-trigger">
             <span class="header-trigger-icon">
               <i class="header-trigger-cross-hatch icon-menu"></i>
               </i>
             </span>
           </label>
-          <ol class="mobile-extra-header-nav-list">
-            <li>
-              <a>
-
-              </a>
-            </li>
-          </ol>
-          <nav class="header-nav">
+          <nav class="header-nav" id="wholenav">
             <div class="header-nav-primary">
               <ol class="header-nav-list">
                 <li class="header-nav-list-item">
@@ -95,7 +88,7 @@
                 </li>
               </ol>
             </div>
-            <div class="header-nav-secondary">
+            <div class="header-nav-secondary" id="sidebarsecondary">
               <label for="header-nav-secondary-show" class="header-nav-list-link">
                 More <span class="header-more-span">></span>
               </label>
@@ -153,15 +146,15 @@
               </ol>
             </div>
             <div class="header-nav-meta-info">
-              <div>
-                <a>
-
+              <div class="header-nav-account-links">
+                <a class="header-nav-meta-link link-for-login">
+                  SIGN IN
                 </a>
-                <a>
-
+                <a class="header-nav-meta-link link-for-logout"> 
+                  Tesla Account
                 </a>
-                <a>
-
+                <a class="header-nav-meta-link link-for-logout">
+                  Sign Out
                 </a>
               </div>
             </div>
@@ -172,5 +165,35 @@
         </div>
       </div>
     </header>
+    <script>
+      let booly = false;
+      const checkbox = document.getElementById("header-trigger");
+      const sidemenu = document.getElementById("sidebarsecondary");
+      const nav = document.getElementById("wholenav");
+      const header = document.getElementById("wholeheader");
+      trigger = () => {
+        function check() {
+          booly = !booly;
+          checkbox.setAttribute('checked', booly);
+          if (checkbox.getAttribute('checked') === 'false') {
+            sidemenu.style.right = "-150%";
+          } else {
+            sidemenu.style.right = "0%";
+          }
+          if (document.body.clientWidth <= 640) {
+            if (checkbox.getAttribute('checked') === 'false') {
+              header.style.overflow = 'hidden';
+              nav.style.right = "-200%";
+            } else {
+              nav.style.right = "0%";
+              nav.style.overflow = 'auto';
+              header.style.overflow = 'visible';
+            }
+          }
+        }
+        document.getElementById('sidelabel').addEventListener('click', check);
+      }
+      trigger();
+    </script>
   </body>
 </html>
