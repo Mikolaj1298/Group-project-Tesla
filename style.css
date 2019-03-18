@@ -13,20 +13,6 @@ ol {
     list-style-type: none;
 }
 
-input {
-    display: block;
-    overflow: visible;
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    padding: 8px 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    color: #222;
-    cursor: pointer;
-    transition: border-color 0.1s ease-in-out;
-}
-
 header {
     width: 100%;
     z-index: 5000;
@@ -50,17 +36,16 @@ header {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    min-width: 320px; /* ? */
+    min-width: 320px;
 }
 
 .header-logo-container {
     display: block;
     margin: 0;
     position: relative; 
-    z-index: 10; /* ? */
+    z-index: 10;
     font-size: 40px;
     line-height: 48px;
-    /* top: -1px; */
 }
 
 .header-logo {
@@ -71,13 +56,12 @@ header {
     padding: 0;
     overflow: hidden;
     text-decoration: none;
-    cursor: pointer; /* ? */
+    cursor: pointer;
     color: white;
     font-family: Calibri;
     text-transform: uppercase;
     font-size: 0.8em;
     letter-spacing: 5px;
-    /* text-indent: -999em; */
 }
 .header-checkbox {
     width: auto;
@@ -95,8 +79,8 @@ header {
     width: 30px;
     height: 30px;
     order: 2;
-    z-index: 5001; /* ? */
-    cursor: pointer; /* ? */
+    z-index: 5001;
+    cursor: pointer;
 }
 
 .header-trigger-icon {
@@ -109,15 +93,8 @@ header {
 }
 
 .header-trigger-cross-hatch {
-    color: black;
-    /* width: 100%;
-    height: 100%;
-    left: 0;
-    top: calc(36% + 2px);
-    transition: right .3s ease-in-out;
-    display: block;
-    position: absolute;
-    text-indent: 2000px;  */
+    color: white;
+    transition: color 0.3s ease-in-out;
 }
 
 .mobile-extra-header-nav-list {
@@ -159,16 +136,12 @@ header {
 }
 
 .link-for-login {
-    opacity: 1;
     z-index: 1;
     position: relative;
-    transition: opacity .15s linear, color .15s ease-in-out; /* ? */
 }
 
 .header-more-span {
     display: inline-block;
-    transform: rotate(0); /* ? */
-    transition: transform 0.3s ease-in-out; /* ? */
 }
 
 [id=header-mask] {
@@ -195,7 +168,6 @@ header {
     header {
         position: absolute;
         background-color: transparent;
-        /* transition: background 300ms ease-in-out; */
     }
 
     .header-actual-container {
@@ -256,6 +228,10 @@ header {
     .header-nav-list-link {
         margin: 0 10px;
         transition: margin .15s ease-in-out;
+    }
+
+    .header-nav-list-link:hover {
+        color: hsla(0, 0%, 100%, 0.5);
     }
 
     .header-nav-secondary {
@@ -325,7 +301,6 @@ header {
     .header-logo-container {
         width: calc(50% + 20px);
         height: 100%;
-        /* margin-left: -20px; */
         position: relative;
         order: 1;
         z-index: 1550;

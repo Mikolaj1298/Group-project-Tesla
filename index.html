@@ -20,7 +20,7 @@
           <input type="checkbox" id="header-trigger" class="header-checkbox">
           <label id="sidelabel" for="header-trigger">
             <span class="header-trigger-icon">
-              <i class="header-trigger-cross-hatch icon-menu"></i>
+              <i class="header-trigger-cross-hatch icon-menu" id ="crosshatch"></i>
               </i>
             </span>
           </label>
@@ -171,14 +171,17 @@
       const sidemenu = document.getElementById("sidebarsecondary");
       const nav = document.getElementById("wholenav");
       const header = document.getElementById("wholeheader");
+      const crosshatch = document.getElementById("crosshatch");
       trigger = () => {
         function check() {
           booly = !booly;
           checkbox.setAttribute('checked', booly);
           if (checkbox.getAttribute('checked') === 'false') {
             sidemenu.style.right = "-150%";
+            crosshatch.style.color = "white";
           } else {
             sidemenu.style.right = "0%";
+            crosshatch.style.color = "black";
           }
           if (document.body.clientWidth <= 640) {
             if (checkbox.getAttribute('checked') === 'false') {
