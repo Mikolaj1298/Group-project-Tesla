@@ -412,3 +412,194 @@ header {
         display: none;
     }
 }
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Mono',
+    monospace;
+    font-weight: normal;
+    font-size: 60px;
+    margin:0;
+    padding:0;
+    color:rgba(253, 253, 253, 0.74);
+    text-shadow:0 2px 18px rgba(0, 0, 0, 0.8);
+}
+
+body {
+    font-family: arial, helvetica;
+    color: #333;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 6em;
+}
+
+p {
+    font-size: 2em;
+}
+
+.section {
+    text-align: center;
+    overflow: hidden;
+}
+
+
+#menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+    position: fixed;
+    height: 100%;
+    /* top: 0; */
+    /* left: 0; */
+    /* height: 40px; */
+    z-index: 11;
+    /* width: 100%; */
+}
+
+#menu li {
+    display: flex;
+    /* display: inline-block; */
+    /* direction: vertical; */
+    margin: 10px;
+    color: #000;
+    background: #fff;
+    background: rgba(119, 119, 119, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#menu li.active {
+    background: #666;
+    background: rgba(255, 255, 255, 0.322);
+    color: #fff;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#menu li.active a:hover {
+    color: #000;
+}
+
+#menu li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#menu li a,
+#menu li.active a {
+    padding: 9px 18px;
+    /* display: block; */
+}
+
+#menu li.active a {
+    color: #fff;
+}
+
+
+	/* #section1 {
+	    background-image: url(http://lorempixel.com/900/600/nightlife/2/);
+	    padding: 6% 0 0 0;
+    } */
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0vh 55%;
+}
+ 
+   .swiper-container {
+       width: 100%;
+       height: 100%;
+       background: #000;
+   }
+    .swiper-slide {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; */
+        font-size: 18px;
+        color: #fff;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-top: 18vh;
+    }
+
+/* #section2 {
+    width: 100;
+    background-size: cover;
+    background-image: url(imgs/bg3.jpg);
+} */
+	#myVideo {
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    top: 0;
+	    right: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-size: 100% 100%;
+	    background-color: black;
+	    /* in case the video doesn't fit the whole page*/
+	    /* background-image:
+	        our video
+	    ; */
+	    background-position: center center;
+	    background-size: contain;
+	    object-fit: cover;
+	    /*cover video background */
+	    z-index: 0;
+    }
+
+ .buttons {
+     margin: 4% auto;
+ }
+
+ .button {
+     text-decoration: none;
+     
+     padding: 15px 45px;
+     margin: 0 10px;
+     border-radius: 20px;
+     background: rgba(54, 54, 54, 0.233);
+     color: black;
+     border: white solid 2px;
+     min-width: 200px;
+     font-weight: 700;
+     font-size: 1rem;
+ }
+
+a:visited {
+        text-decoration: none;
+        decoration: none;
+}
+
+ .button:first-child {
+     background: white;
+     color: black;
+ }
+
+ .over-video {
+    position: relative;
+     z-index: 1;
+ }
+
+ .fp-tableCell {
+     text-align: center;
+     vertical-align: end;
+     /* padding-bottom: 20vh;  */
+ }
+
+ 
+
