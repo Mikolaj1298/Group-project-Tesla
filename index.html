@@ -13,15 +13,174 @@
     <link rel="stylesheet" type="text/css" href="mechanics/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="mechanics/swiper.min.css">
-
+    <link rel="stylesheet" href="fontello icons/fontello-e5c3186a/css/fontello.css" type = "text/css">
+ 
     <!--[if IE]>
         <script type="text/javascript">
              var console = { log: function() {} };
         </script>
     <![endif]-->
+    
 </head>
 
 <body>
+  <header id="wholeheader">
+  <div class="header-main-container">
+    <div class="header-actual-container">
+      <h1 class="header-logo-container">
+        <a class="header-logo">
+          tesla
+        </a>
+      </h1>
+      <input type="checkbox" id="header-trigger" class="header-checkbox">
+      <label id="sidelabel" for="header-trigger">
+        <span class="header-trigger-icon">
+          <i class="header-trigger-cross-hatch icon-menu" id="crosshatch"></i>
+          </i>
+        </span>
+      </label>
+      <nav class="header-nav" id="wholenav">
+        <div class="header-nav-primary">
+          <ol class="header-nav-list">
+            <li class="header-nav-list-item">
+              <a class="header-nav-list-link" href="#firstPage">
+                Model S
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-list-link" href="#firstPage">
+                Model 3
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-list-link" href="#firstPage">
+                Model X
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-list-link" href="#firstPage">
+                Model Y
+              </a>
+            </li>
+            <li class="header-nav-list-item header-hide-on-mobile">
+              <a class="header-nav-list-link" href="#firstPage">
+                Roadster
+              </a>
+            </li>
+            <li class="header-nav-list-item header-hide-on-desk">
+              <a class="header-nav-list-link">
+                Used Inventory
+              </a>
+            </li>
+            <li class="header-nav-list-item header-hide-on-desk">
+              <a class="header-nav-list-link">
+                Find Us
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-list-link" href="#3rdPage">
+                Energy
+              </a>
+            </li>
+            <li class="header-nav-list-item header-nav-list-last-item">
+              <ol class="header-nav-list header-nav-primary-right">
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-link">
+                    Shop
+                  </a>
+                </li>
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-link link-for-logout header-nav-auth-link">
+                    Tesla Account
+                  </a>
+                </li>
+                <li class="header-nav-list-item">
+                  <a class="header-nav-list-link link-for-login header-nav-auth-link">
+                    SIGN IN
+                  </a>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+        <div class="header-nav-secondary" id="sidebarsecondary">
+          <label for="header-nav-secondary-show" class="header-nav-list-link">
+            More <span class="header-more-span">></span>
+          </label>
+          <ol class="header-nav-list header-nav-parent-nav">
+            <li class="header-nav-list-item header-hide-on-mobile">
+              <a class="header-nav-list-link">
+                Used Inventory
+              </a>
+            </li>
+            <li class="header-nav-list-item header-hide-on-mobile">
+              <a class="header-nav-list-link">
+                Find Us
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-list-link">
+                Support
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-list-link">
+                Get Newsletter
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-list-link">
+                News
+              </a>
+            </li>
+            <li class="header-nav-list-item header-hide-on-desk">
+              <a class="header-nav-list-link">
+                Roadster
+              </a>
+            </li>
+            <li class="header-nav-list-item header-hide-on-desk">
+              <a class="header-nav-list-link">
+                New Iventory
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-list-link">
+                Charging
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-list-link">
+                Semi
+              </a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-list-link">
+                Carbon Impact
+              </a>
+            </li>
+          </ol>
+        </div>
+        <div class="header-nav-meta-info">
+          <div class="header-nav-account-links">
+            <a class="header-nav-meta-link link-for-login">
+              SIGN IN
+            </a>
+            <a class="header-nav-meta-link link-for-logout">
+              Tesla Account
+            </a>
+            <a class="header-nav-meta-link link-for-logout">
+              Sign Out
+            </a>
+          </div>
+        </div>
+      </nav>
+      <span id="header-mask">
+
+      </span>
+    </div>
+  </div>
+</header>
+
     <ul id="menu">
         <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a><a href=""></a></li>
         <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
@@ -129,6 +288,39 @@
             prevEl: '.swiper-button-prev',
         },
     });
+</script>
+<script>
+  let booly = false;
+  const checkbox = document.getElementById("header-trigger");
+  const sidemenu = document.getElementById("sidebarsecondary");
+  const nav = document.getElementById("wholenav");
+  const header = document.getElementById("wholeheader");
+  const crosshatch = document.getElementById("crosshatch");
+  trigger = () => {
+    function check() {
+      booly = !booly;
+      checkbox.setAttribute('checked', booly);
+      if (checkbox.getAttribute('checked') === 'false') {
+        sidemenu.style.right = "-150%";
+        crosshatch.style.color = "white";
+      } else {
+        sidemenu.style.right = "0%";
+        crosshatch.style.color = "black";
+      }
+      if (document.body.clientWidth <= 640) {
+        if (checkbox.getAttribute('checked') === 'false') {
+          header.style.overflow = 'hidden';
+          nav.style.right = "-200%";
+        } else {
+          nav.style.right = "0%";
+          nav.style.overflow = 'auto';
+          header.style.overflow = 'visible';
+        }
+      }
+    }
+    document.getElementById('sidelabel').addEventListener('click', check);
+  }
+  trigger();
 </script>
 </body>
 
