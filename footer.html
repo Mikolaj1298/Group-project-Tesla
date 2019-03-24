@@ -6,7 +6,11 @@
       <title>Tesla</title>
       <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
       <link href="style.css" rel="stylesheet" type="text/css">
-      <link href="flag-icon-css-master/css/flag-icon.css" rel="stylesheet" type="text/css">
+      <link href="css/flag-icon.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     </head>
     <body>
       <header>
@@ -26,10 +30,188 @@
               <li><a class="footeritem" href="https://www.tesla.com/updates" title="Get Newsletter">Get Newsletter</a></li>
               <li><a class="footeritem" href="https://forums.tesla.com/forums" title="Forums">Forums</a></li>
               <li><a class="footeritem" href="https://www.tesla.com/findus/list" title="Locations">Locations</a></li>
-              <li><span class="flag-icon flag-icon-us"></span> &nbsp; United States</li>
+              <li><button type="button" class="btn btn-link openlink" style="background-color:white; text-decoration:none; border:none" data-toggle="modal" data-target="#open"><a class="footeritem" href="#open"><span class="flag-icon flag-icon-us"></span> &nbsp; United States</a></button></li>
             </ul>
           </div>
       </footer>
+      <div id="open" class="modal fade" role="dialog">
+        <div class="openselect">
+          <div class="content">
+            <button type="button" class="btn btn-default" class="close" style="background-color:black; color:white; height:50px; width:50px; font-size:50px; border:none" data-dismiss="modal">×</button>
+            <div class="openbody">
+              <div class="north-america">
+                <h4 class="locale-title">North America</h4>
+                <ul class="locale-list">
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-us"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/?redirect=no" rel="en_US" title="USA">USA</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-ca"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/en_CA?redirect=no" rel="en_CA" title="Canada (En)">Canada (En)</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-ca"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/fr_CA/?redirect=no" rel="fr_CA" title="Canada (Fr)">Canada (Fr)</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-mx"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/es_MX/?redirect=no" rel="es_MX" title="México">México</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="europe">
+                <h4 class="locale-title">Europe</h4>
+                <ul class="locale-list">
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-be"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/fr_BE/?redirect=no" rel="fr_BE" title="Belgique">Belgique</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-be"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/nl_BE/?redirect=no" rel="nl_BE" title="België">België</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-dk"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/da_DK/?redirect=no" rel="da_DK" title="Danmark">Danmark</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-de"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/de_DE/?redirect=no" rel="de_DE" title="Deutschland">Deutschland</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-es"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/es_ES/?redirect=no" rel="es_ES" title="España">España</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-fr"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/fr_FR/?redirect=no" rel="fr_FR" title="France">France</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-gb"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/en_GB/?redirect=no" rel="en_GB" title="United Kingdom">United
+                      Kingdom</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-ie"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/en_IE?redirect=no" rel="en_IE" title="Ireland">Ireland</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-it"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/it_IT/?redirect=no" rel="it_IT" title="Italia">Italia</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-lu"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/fr_LU/?redirect=no" rel="fr_LU" title="Luxembourg">Luxembourg</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-lu"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/de_LU/?redirect=no" rel="de_LU" title="Luxemburg">Luxemburg</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-nl"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/nl_NL/?redirect=no" rel="nl_NL" title="Nederland">Nederland</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-no"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/no_NO/?redirect=no" rel="no_NO" title="Norge">Norge</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-at"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/de_AT/?redirect=no" rel="de_AT" title="Österreich">Österreich</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-pt"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/pt_PT/?redirect=no" rel="pt_PT" title="Portugal">Portugal</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-ch"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/de_CH/?redirect=no" rel="de_CH" title="Schweiz">Schweiz</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-ch"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/fr_CH/?redirect=no" rel="fr_CH" title="Suisse">Suise</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-ch"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/it_CH/?redirect=no" rel="it_CH" title="Svizzera">Svizzera</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-se"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/sv_SE/?redirect=no" rel="sv_SE" title="Sverige">Sverige</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-fi"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/fi_FI/?redirect=no" rel="fi_FI" title="Suomi">Suomi</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-eu"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/en_EU/?redirect=no" rel="en_EU" title="Other Europe">Other Europe</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="middle-east">
+                <h4 class="locale-title">Middle-East</h4>
+                <ul class="locale-list">
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-ae"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/en_AE/?redirect=no" rel="en_AE" title="UAE">UAE</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-jo"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/en_JO/?redirect=no" rel="en_JO" title="Jordan">Jordan</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="asia_pacific">
+                <h4 class="locale-title">Asia/Pacific</h4>
+                <ul class="locale-list">
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-cn"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/zh_CN/?redirect=no" rel="zh_CN" title="中国大陆">中国大陆</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-hk"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/en_HK/?redirect=no" rel="en_HK" title="Hong Kong">Hong Kong</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-hk"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/zh_HK/?redirect=no" rel="zh_HK" title="香港">香港</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-jp"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/ja_JP/?redirect=no" rel="ja_JP" title="日本">日本</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-mo"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/en_MO/?redirect=no" rel="en_MO" title="Macau">Macau</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-mo"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/zh_MO/?redirect=no" rel="zh_MO" title="澳門">澳門</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-tw"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/zh_TW/?redirect=no" rel="zh_TW" title="台灣">台灣</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-kr"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/ko_KR/?redirect=no" rel="ko_KR" title="대한민국">대한민국</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-au"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/en_AU/?redirect=no" rel="en_AU" title="Australia">Australia</a>
+                  </li>
+                  <li class="locale-item">
+                    <i class="flag-icon flag-icon-nz"></i>&nbsp;&nbsp;
+                    <a href="https://www.tesla.com/en_NZ/?redirect=no" rel="en_NZ" title="New Zealand">New Zealand</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </body>
 </html>

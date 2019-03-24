@@ -1,7 +1,8 @@
 .container  {
     min-height: 100%;
-    position: relative'
+
 }
+
 
 .footer {
     background-color: white;
@@ -24,17 +25,227 @@ ul.footerlist li {
     margin-right: 15px;
 }
 
-a.footeritem:link {
+li a.footeritem:link {
     text-decoration: none;
     color: black;
 }
 
-a.footeritem:hover {
+li a.footeritem:hover {
     text-decoration: none;
     color: black;
 }
 
-a.footeritem:visited {
+li a.footeritem:visited {
     text-decoration: none;
     color: black;
 }
+
+.open {
+    position: relative;
+}
+
+.openselect {
+    background: black;
+    color: white;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: scroll;
+    pointer-events: all;
+    box-sizing: border-box;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 auto;
+    position: absolute;
+    top: 5vh;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+li.locale-item a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+button.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    background: black;
+    color: rgb(214, 212, 212);
+    font-size: 50px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.openbody {
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 0%;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: space-between;
+    line-height: 24px;
+    max-height: 730px;
+    padding-bottom: 30.176px;
+    padding-left: 30.176px;
+    padding-right: 30.176px;
+    padding-top: 30.176px;
+    pointer-events: all;
+    position: relative;
+    text-size-adjust: 100%;
+    transition-delay: 0s;
+    transition-duration: 0.15s;
+    transition-property: padding;
+    transition-timing-function: ease-in-out;
+}
+
+h4 {
+    box-sizing: border-box;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-block-end: 26.6px;
+    margin-block-start: 26.6px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    pointer-events: all;
+    text-size-adjust: 100%;
+}
+
+ul.locale-list {
+    box-sizing: border-box;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style-type: none;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-bottom: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    max-height: 100%;
+    overflow-x: visible;
+    overflow-y: visible;
+    pointer-events: all;
+    padding: 0px;
+}
+
+li.locale-item {
+    align-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 12px;
+    text-align: left;
+    text-size-adjust: 100%;
+    pointer-events: all;
+}
+
+.north-america, .middle-east, .asia_pacific {
+    display: block;
+    flex-grow: 1;
+}
+
+.europe {
+    display: block;
+    flex-grow: 2;
+}
+
+.europe ul {
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#open {
+    display: none;
+}
+
+.openlink {
+    background: white;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.openlink:hover {
+    background: white;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.openlink:active {
+    background: white;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.openlink:link {
+    background: white;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.openlink:visited {
+    background: white;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.openlink:focus {
+    background: white;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footerlist {
+   position: relative;
+   right: 12%;
+}
+
+
+
